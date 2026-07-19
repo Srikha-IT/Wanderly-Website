@@ -5,11 +5,11 @@ Wanderly is a responsive travel website built using HTML, CSS, and JavaScript. I
 ## Features
 
 - Responsive design for desktop and mobile devices
-- Home page with automatic background image slider
+- Home page with an automatic background image slider
 - About page with company information
-- Explore page displaying travel destinations
-- Contact form with JavaScript validation
-- Login page with email validation
+- Explore page with travel destinations filtered by category buttons
+- Contact page with JavaScript form validation
+- Login page with integrated Sign Up option and JavaScript form validation
 - Search functionality using Local Storage
 - Interactive user interface with JavaScript
 
