@@ -1,0 +1,215 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Explore Page</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="css/explore.css" />
+  </head>
+  
+  <body>
+    <nav class="navbar">
+      <div class="logo">
+        <i class="fa-solid fa-plane"></i>
+        <h1>Wanderly</h1>
+      </div>
+
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li class="active"><a href="explore.html">Explore</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <a href="login.html">
+      <button>Login</button>
+      </a>
+    </nav>
+
+    <div class="head">
+      <h1>Explore Destinations</h1>
+      <i class="fa-solid fa-plane"></i>
+    </div>
+
+    <div class="btns">
+      <button id="btn1">All</button>
+      <button id="btn2">Beach</button>
+      <button id="btn3">Mountains</button>
+      <button id="btn4">City</button>
+      <button id="btn5">Adventure</button>
+    </div>
+
+    <div class="grid">
+      <div class="place" data-category="Beach">
+        <img
+          src="images/indonesia.jpeg"
+          alt=""
+        />
+        <p id="pa">Bali, Indonesia</p>
+        <p>From ₹39,999</p>
+      </div>
+      <div class="place" data-category="Beach">
+        <img
+          src="images/greece.jpg"
+          alt=""
+        />
+        <p id="pa">Santorini, Greece</p>
+        <p>From ₹49,999</p>
+      </div>
+      <div class="place" data-category="Mountain">
+        <img
+          src="images/switzerland.jpg"
+          alt=""
+        />
+        <p id="pa">Switzerland</p>
+        <p>From ₹89,999</p>
+      </div>
+      <div class="place" data-category="City">
+        <img
+          src="images/japan.jpg"
+          alt=""
+        />
+        <p id="pa">Tokyo, Japan</p>
+        <p>From ₹74,999</p>
+      </div>
+      <div class="place" data-category="Beach">
+        <img
+          src="images/maldives.jpg"
+          alt=""
+        />
+        <p id="pa">Maldives</p>
+        <p>From ₹34,999</p>
+      </div>
+      <div class="place" data-category="City">
+        <img
+          src="images/france.jpg"
+          alt=""
+        />
+        <p id="pa">Paris, France</p>
+        <p>From ₹59,999</p>
+      </div>
+      <div class="place" data-category="City">
+        <img
+          src="images/newyork.jpg"
+          alt=""
+        />
+        <p id="pa">New York, USA</p>
+        <p>From ₹84,999</p>
+      </div>
+      <div class="place" data-category="Adventure">
+        <img
+          src="images/dubai.jpg"
+          alt=""
+        />
+        <p id="pa">Dubai, UAE</p>
+        <p>From ₹54,999</p>
+      </div>
+      <div class="place" data-category="Mountain">
+        <img
+          src="images/canada.jpg"
+          alt=""
+        />
+        <p id="pa">Banff, Canada</p>
+        <p>From ₹79,999</p>
+      </div>
+      <div class="place" data-category="Mountain">
+        <img
+          src="images/austria.jpg"
+          alt=""
+        />
+        <p id="pa">Hallstatt, Austria</p>
+        <p>From ₹69,999</p>
+      </div>
+      <div class="place" data-category="Adventure">
+        <img
+          src="images/newzealand.jpg"
+          alt=""
+        />
+        <p id="pa">Queenstown, New Zealand</p>
+        <p>From ₹94,999</p>
+      </div>
+      <div class="place" data-category="Adventure">
+        <img
+          src="images/costa.jpg"
+          alt=""
+        />
+        <p id="pa">Costa Rica</p>
+        <p>From ₹64,999</p>
+      </div>
+    </div>
+
+    <div class="container3">
+      <div class="box sub1">
+        <h2>Wanderly</h2>
+        <p>Let's make your next journey your best adventure yet.</p>
+
+        <div class="iconbox">
+          <a href="#" class="social-icon1 facebook">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+          <a href="#" class="social-icon1 instagram">
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a href="#" class="social-icon1 twitter">
+            <i class="fab fa-x-twitter"></i>
+          </a>
+          <a href="#" class="social-icon1 linkedin">
+            <i class="fab fa-linkedin-in"></i>
+          </a>
+        </div>
+      </div>
+
+      <div class="box sub2">
+        <p>Quick Links</p>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="explore.html">Explore</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="box sub3">
+        <p>Top Destinations</p>
+        <ul>
+          <li>Bali</li>
+          <li>Greece</li>
+          <li>Switzerland</li>
+          <li>Japan</li>
+        </ul>
+      </div>
+
+      <div class="box sub4">
+        <p>Support</p>
+        <ul>
+          <li>FAQ</li>
+          <li>Privacy Policy</li>
+          <li>Terms & Conditions</li>
+        </ul>
+      </div>
+
+      <div class="box sub5">
+        <p id="sub5p1">Newsletter</p>
+        <p id="sub5p2">
+          Subscribe to get the latest travel updates and offers.
+        </p>
+
+        <div class="iconbox2">
+          <input id="mail" type="email" placeholder="Enter your Email" />
+          <a href="#" class="social-icon2 msg">
+            <i class="fas fa-paper-plane"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="bottom">
+      <p>@ 2026 Wanderly. All Rights Reserved.</p>
+    </div>
+
+    <script src="js/explore.js"></script>
+  </body>
+</html>

@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Page</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="css/about.css" />
+  </head>
+
+  <body>
+    <nav class="navbar">
+      <div class="logo">
+        <i class="fa-solid fa-plane"></i>
+        <h1>Wanderly</h1>
+      </div>
+
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li class="active"><a href="about.html">About</a></li>
+        <li><a href="explore.html">Explore</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <a href="login.html">
+        <button>Login</button>
+      </a>
+    </nav>
+
+    <div class="container1">
+      <div class="box1">
+        <h1>About Us</h1>
+        <div class="line">
+          <hr />
+          <i class="fa-solid fa-plane"></i>
+        </div>
+        <p>
+          At Wanderly, we believe that travel is more than just visiting new
+          places - it's about creating unforgettable memories.<br /><br />
+          Our mission is to help travelers explore the world with ease, comfort,
+          and the best experiences possible.
+        </p>
+      </div>
+      <div class="box2">
+        <img src="images/aboutpage.jpg" alt="aboutpage image" />
+      </div>
+    </div>
+
+    <div class="container2">
+      <div class="head1"><h2>Why Travel With Us?</h2></div>
+      <div class="middle">
+        <div class="c1">
+          <i class="fa-solid fa-tags" style="color: blue; font-size: 24px"></i
+          ><br />
+          <h3>Best Prices</h3>
+          <p>We offer the best prices and amazing deals for your journey.</p>
+        </div>
+
+        <div id="b2" class="c1">
+          <i
+            class="fa-regular fa-handshake"
+            style="color: blue; font-size: 24px"
+          ></i
+          ><br />
+          <h3>Trusted Service</h3>
+          <p>Our team is available 24/7 to assist you anytime.</p>
+        </div>
+
+        <div id="b3" class="c1">
+          <i class="fa-solid fa-hotel" style="color: blue; font-size: 24px"></i
+          ><br />
+          <h3>Handpicked Hotels</h3>
+          <p>We partner with top-rated hotels for your comfortable stay.</p>
+        </div>
+
+        <div id="b4" class="c1">
+          <i
+            class="fa-solid fa-wand-magic-sparkles"
+            style="color: blue; font-size: 24px"
+          ></i
+          ><br />
+          <h3>Memorable Experiences</h3>
+          <p>We help you create memories that last for lifetime.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="container3">
+      <div class="box sub1">
+        <h2>Wanderly</h2>
+        <p>Let's make your next journey your best adventure yet.</p>
+        <div class="iconbox">
+          <a href="#" class="social-icon1 facebook">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+          <a href="#" class="social-icon1 instagram">
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a href="#" class="social-icon1 twitter">
+            <i class="fab fa-x-twitter"></i>
+          </a>
+          <a href="#" class="social-icon1 linkedin">
+            <i class="fab fa-linkedin-in"></i>
+          </a>
+        </div>
+      </div>
+
+      <div class="box sub2">
+        <p>Quick Links</p>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="explore.html">Explore</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="box sub3">
+        <p>Top Destinations</p>
+        <ul>
+          <li>Bali</li>
+          <li>Greece</li>
+          <li>Switzerland</li>
+          <li>Japan</li>
+        </ul>
+      </div>
+
+      <div class="box sub4">
+        <p>Support</p>
+        <ul>
+          <li>FAQ</li>
+          <li>Privacy Policy</li>
+          <li>Terms & Conditions</li>
+        </ul>
+      </div>
+
+      <div class="box sub5">
+        <p id="sub5p1">Newsletter</p>
+        <p id="sub5p2">
+          Subscribe to get the latest travel updates and offers.
+        </p>
+
+        <div class="iconbox2">
+          <input id="mail" type="email" placeholder="Enter your Email" />
+          <a href="#" class="social-icon2 msg">
+            <i class="fas fa-paper-plane"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="bottom">
+      <p>@ 2026 Wanderly. All Rights Reserved.</p>
+    </div>
+
+    <script>
+      // newsletter subcription
+      //console.log("Script loaded");
+      const subscribe = document.querySelector(".msg");
+      const mailid = document.getElementById("mail");
+      subscribe.addEventListener("click", (event) => {
+        event.preventDefault();
+        let email = mailid.value.trim();
+        if (!mailid.checkValidity()) {
+          alert("Please enter a valid email address.");
+        } else {
+          alert("Subscribed Successfully!");
+          console.log(email);
+          mailid.value = "";
+        }
+      });
+    </script>
+  </body>
+</html>
