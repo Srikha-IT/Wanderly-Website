@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login page</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="/css/login.css" />
+  </head>
+
+  <body>
+    <div class="main">
+      <div class="icon"><i class="fa-solid fa-plane"></i></div>
+
+      <div class="text">
+        <h1>Welcome Back!</h1>
+        <p>
+          Login to continue your journey<br />with us and explore the world.
+        </p>
+      </div>
+
+      <div class="login" id="logindiv">
+        <h1>Login</h1>
+        <p id="p1">
+          Enter your credentials to access<br />
+          your account.
+        </p>
+        <br />
+        <form id="loginform">
+          <label for="mail">Email Address</label><br /><br />
+          <input
+            type="email"
+            id="mail"
+            placeholder="Enter your Email"
+            required
+          /><br /><br />
+          <label for="pwd">Password</label><br /><br />
+          <input
+            type="password"
+            id="pwd"
+            placeholder="Enter your Password"
+            required
+          /><br /><br />
+          <a href="" id="fpwd">Forget Password?</a><br />
+
+          <label class="chbox"> <input type="checkbox" />Remember Me </label>
+          <br />
+
+          <button type="submit" id="loginbtn">Login</button>
+          <br />
+
+          <p id="p2">
+            Don't have an account?
+            <a href="" id="sign">Sign Up</a>
+          </p>
+        </form>
+      </div>
+
+      <div class="signin" id="signindiv">
+        <h1>Create Account</h1>
+        <p id="sp1">
+          Create your account to start exploring amazing destinations.
+        </p>
+        <form id="signform">
+          <label for="name">Full Name</label><br />
+          <input
+            type="text"
+            id="name"
+            placeholder="Enter your Full Name"
+            required
+          /><br />
+          <label for="mail">Email Address</label><br />
+          <input
+            type="email"
+            id="signmail"
+            placeholder="Enter your Email"
+            required
+          /><br />
+          <label for="pwd">Password</label><br />
+          <input
+            type="password"
+            id="signpwd"
+            placeholder="Enter your Password"
+            required
+          /><br />
+          <label for="cpwd">Confirm Password</label><br />
+          <input
+            type="password"
+            id="cpwd"
+            placeholder="Confirm your Password"
+            required
+          /><br /><br />
+
+          <button type="submit" id="signinbtn">Sign Up</button>
+          <br />
+
+          <p id="sp2">
+            Already have an account?
+            <a href="#" id="log">Login</a>
+          </p>
+        </form>
+      </div>
+    </div>
+
+    <script src="js/login.js"></script>
+  </body>
+</html>

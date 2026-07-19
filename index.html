@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wanderly Home Page</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+
+    <link rel="stylesheet" href="css/index.css" />
+  </head>
+
+  <body>
+    <div class="bgimg">
+      <nav class="navbar">
+        <div class="logo">
+          <i class="fa-solid fa-plane"></i>
+          <h1>Wanderly</h1>
+        </div>
+
+        <ul>
+          <li><a class="active" href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="explore.html"  onclick="localStorage.removeItem('page')">Explore</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <a href="login.html">
+          <button>Login</button>
+        </a>
+      </nav>
+
+      <div class="para">
+        <p id="p1">
+          Explore The <br />
+          Beauty of The World
+        </p>
+        <p id="p2">
+          Discover amazing places at exclusive deals <br />
+          and make your journey unforgettable
+        </p>
+      </div>
+
+      <div class="btns">
+        <button id="btn1"><a href="explore.html">Explore Now</a></button>
+        <button id="btn2"><a href="about.html">Learn More</a></button>
+      </div>
+
+      <div class="cards">
+        <div class="loc">
+          <div class="title">
+            <i
+              class="fa-regular fa-location"
+              style="color: blue; font-size: 24px"
+            ></i>
+            Location
+          </div>
+
+          <input type="text" id="location" placeholder="Where are you going?" />
+        </div>
+
+        <div class="c1">
+          <div class="title">
+            <i
+              class="fa-regular fa-calendar"
+              style="color: blue; font-size: 24px"
+            ></i>
+            <span class="heading">Check In</span>
+          </div>
+          <div class="date-row">
+            <input type="date" id="checkin" />
+            <span class="date-text">Add Date</span>
+          </div>
+        </div>
+
+        <div class="c1">
+          <div class="title">
+            <i
+              class="fa-regular fa-calendar-check"
+              style="color: blue; font-size: 24px"
+            ></i>
+            <span class="heading">Check Out</span>
+          </div>
+          <div class="date-row">
+            <input type="date" id="checkout" />
+            <span class="date-text">Add Date</span>
+          </div>
+        </div>
+
+        <div class="c1">
+          <div class="title">
+            <i
+              class="fa-regular fa-user"
+              style="color: blue; font-size: 24px"
+            ></i>
+            Guests
+          </div>
+
+          <input type="number" id="guests" min="1" placeholder="Add Guests" />
+        </div>
+
+        <button>Search</button>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="gridhead">
+        <h1>Popular Destinations</h1>
+        <a href="explore.html"><h3>View All</h3></a>
+      </div>
+
+      <div class="grid">
+        <div class="box">
+          <img src="images/indonesia.jpeg" alt="" />
+          <span class="info"
+            >Bali, Indonesia<br />
+            From $409</span
+          >
+        </div>
+        <div class="box">
+          <img src="images/greece.jpg" alt="" />
+          <span class="info"
+            >Santorini, Greece<br />
+            From $509</span
+          >
+        </div>
+        <div class="box">
+          <img src="images/switzerland.jpg" alt="" />
+          <span class="info"
+            >Switzerland<br />
+            From $609</span
+          >
+        </div>
+        <div class="box">
+          <img src="images/japan.jpg" alt="" />
+          <span class="info"
+            >Tokyo, Japan<br />
+            From $809</span
+          >
+        </div>
+      </div>
+    </div>
+
+    <script src="js/index.js"></script>
+  </body>
+</html>

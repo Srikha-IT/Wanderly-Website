@@ -1,0 +1,529 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  padding: 0;
+  position: relative;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.navbar {
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 30px;
+  top: 0;
+  height: 10vh;
+  width: 100vw;
+}
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-left: 15px;
+}
+.logo h1 {
+  margin: 0;
+  color: blue;
+}
+.navbar ul {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  padding-top: 10px;
+  gap: 70px;
+  list-style: none;
+  font-size: 18px;
+  font-weight: bold;
+  color: rgb(5, 5, 75);
+  overflow: hidden;
+}
+.navbar button {
+  background-color: blue;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  display: flex;
+  margin-top: 15px;
+  width: 7vw;
+  height: 6vh;
+  align-items: center;
+  justify-content: center;
+}
+.navbar .fa-plane {
+  color: blue;
+  font-size: 30px;
+  display: flex;
+  align-items: center;
+  transform: rotate(-45deg);
+}
+.navbar a:link,
+.navbar a:visited {
+  text-decoration: none;
+  color: rgb(8, 8, 125);
+}
+.navbar a {
+  text-decoration: none;
+  display: inline-block;
+  padding-bottom: 12px;
+}
+.navbar a:hover {
+  color: blue;
+}
+.navbar li.active a {
+  color: blue;
+}
+.navbar li.active {
+  border-bottom: 3px solid blue;
+}
+
+/*div for wanderly info */
+.container3 {
+  background-color: rgb(5, 5, 75);
+  position: absolute;
+  top: 182vh;
+  width: 100vw;
+  height: 50vh;
+  display: grid;
+  grid-template-columns: 1.5fr 1fr 1.3fr 1.3fr 1.8fr;
+  gap: 5px;
+  padding: 30px;
+}
+.box {
+  display: flex;
+  height: 42vh;
+  width: 100%;
+  border-radius: 10px;
+  color: white;
+  flex-direction: column;
+  padding: 0 20px 0 20px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  letter-spacing: 2px;
+}
+.box h2 {
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+.sub1 p {
+  padding: 0;
+  margin: 0;
+}
+
+.sub1 {
+  line-height: 2.5;
+}
+.sub2 p {
+  font-weight: bold;
+}
+.sub2 ul {
+  padding-left: 0;
+  padding-top: 0;
+  margin: 0;
+}
+
+.sub2 li a {
+  color: white;
+  line-height: 3;
+}
+.sub2 ul {
+  list-style: none;
+}
+.sub2 a:link,
+a:visited {
+  text-decoration: none;
+}
+.sub2 a:hover,
+a:active {
+  text-decoration: unset;
+  color: rgb(188, 188, 223);
+}
+
+.sub3 ul {
+  list-style: none;
+  line-height: 3;
+  padding-left: 0;
+  padding-top: 0;
+  margin: 0;
+}
+.sub3 p {
+  font-weight: bold;
+}
+
+.sub4 ul {
+  list-style: none;
+  line-height: 3;
+  padding-left: 0;
+  padding-top: 0;
+  margin: 0;
+}
+.sub4 p {
+  font-weight: bold;
+}
+#sub5p1 {
+  font-weight: bold;
+}
+#sub5p2 {
+  font-weight: none;
+  line-height: 2;
+}
+#mail {
+  width: 15vw;
+  height: 7vh;
+  margin-top: 10px;
+  margin-left: 5px;
+  border-radius: 10px;
+  border: none;
+}
+::placeholder {
+  font-size: 20px;
+  color: black;
+  padding-left: 20px;
+  opacity: 0.5;
+}
+/*last div for bottom text*/
+.bottom {
+  background-color: rgb(5, 5, 75);
+  position: absolute;
+  top: 230vh;
+  height: 12vh;
+  width: 100vw;
+  color: white;
+  text-align: center;
+  padding-top: 10px;
+  font-size: 18px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  word-spacing: 3px;
+  letter-spacing: 2px;
+}
+/* 1st div*/
+.head {
+  text-align: center;
+}
+.head h1 {
+  color: rgb(12, 12, 118);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin-bottom: 8px;
+}
+.head .fa-plane {
+  /*icon*/
+  color: blue;
+  font-size: 20px;
+  transform: rotate(-10deg);
+}
+/* 2nd div for buttons*/
+.btns {
+  position: absolute;
+  width: 100%;
+  height: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+  top: 30vh;
+}
+.btns button {
+  background-color: rgb(222, 222, 231);
+  color: rgb(12, 12, 132);
+  font-size: large;
+  font-weight: 550;
+  border: none;
+  border-radius: 5px;
+  height: 7vh;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+#btn1 {
+  width: 7vw;
+}
+#btn2 {
+  width: 8vw;
+}
+#btn3 {
+  width: 10vw;
+}
+#btn4 {
+  width: 7vw;
+}
+#btn5 {
+  width: 10vw;
+}
+/* middle div for destinations with grid display*/
+.grid {
+  /*background-color: aqua;*/
+  position: absolute;
+  top: 42vh;
+  margin: 0;
+  width: 100vw;
+  height: 140vh;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 1fr 1fr;
+  column-gap: 30px;
+  row-gap: 40px;
+  padding: 30px 30px;
+  overflow-y: scroll;
+  scrollbar-width: none;
+}
+.place {
+  position: relative;
+  display: flex;
+  background-color: white;
+  height: 60vh;
+  width: 100%;
+  border-radius: 10px;
+  color: rgb(6, 6, 132);
+  flex-direction: column;
+  box-shadow: 5px 5px 2px rgba(172, 172, 172, 0.3);
+}
+.place img {
+  width: 100%;
+  height: 75%;
+  margin-top: 0;
+  border-radius: 10px;
+}
+.place p {
+  padding-left: 10px;
+  padding-top: 10px;
+  margin-top: 0;
+  font-size: large;
+  font-weight: 500;
+}
+#pa {
+  padding-left: 10px;
+  margin: 0;
+  padding-top: 10px;
+  font-size: larger;
+  font-weight: bold;
+}
+.place:hover {
+  transform: scale3d(1.1, 1.1, 0.5);
+  transition: all 0.5s ease-in;
+}
+.place::before {
+  content: attr(data-category);
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  padding: 5px 12px;
+  background: white;
+  color: blue;
+  border-radius: 20px;
+  font-weight: 500;
+}
+
+.iconbox {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.social-icon1 {
+  margin-top: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px; /* Equal width and height ensure a perfect circle */
+  height: 25px;
+  border-radius: 50%;
+  color: #ffffff; /* Font Awesome symbol to white */
+  font-size: 18px; /* Adjusts the size of the inner icon symbol */
+  text-decoration: none;
+}
+.facebook {
+  background-color: blue;
+}
+.instagram {
+  background-color: blue;
+}
+.twitter {
+  background-color: blue;
+}
+.linkedin {
+  background-color: blue;
+}
+.msg {
+  background-color: blue;
+}
+
+.iconbox2 {
+  display: flex;
+  align-items: center;
+  gap: 1px;
+}
+.social-icon2 {
+  margin-top: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px; /* Equal width and height ensure a perfect circle */
+  height: 40px;
+  border-radius: 10%;
+  color: #ffffff; /* Font Awesome symbol to white */
+  font-size: 28px; /* Adjusts the size of the inner icon symbol */
+  text-decoration: none;
+}
+/*media queries for mobile screen*/
+@media (max-width: 500px) {
+  .main {
+    height: auto;
+  }
+  .navbar {
+    height: auto;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .logo {
+    width: 100%;
+    display: flex;
+    margin-left: 0;
+    padding-left: 0;
+  }
+  .logo h1 {
+    margin-top: 20px;
+    padding: 0;
+    font-size: 25px;
+  }
+  .logo .fa-plane {
+    margin-top: 20px;
+    padding: 0;
+    font-size: 25px;
+  }
+  .navbar ul {
+    flex-direction: row;
+    gap: 15px;
+    font-size: 15px;
+    padding: 20px 0;
+  }
+  .navbar button {
+    width: 90px;
+    height: 30px;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+    margin-left: 0;
+  }
+  .navbar a {
+    padding-bottom: 2px;
+  }
+
+  .head {
+    position: static;
+    width: 100%;
+    height: auto;
+    padding-left: 0;
+    text-align: center;
+    font-size: smaller;
+  }
+  .btns {
+    position: static;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    margin: 20px;
+    padding: 10px;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 90%;
+    height: auto;
+  }
+  #btn5 {
+    grid-column: 1 / span 2; /* Span both columns */
+    justify-content: center;
+    width: 100%;
+  }
+  #btn1,
+  #btn2,
+  #btn3,
+  #btn4,
+  #btn5 {
+    width: auto;
+    font-size: small;
+  }
+
+  .grid {
+    position: static;
+    width: 100%;
+    height: auto;
+    padding-left: 0;
+    text-align: center;
+    grid-template-columns: 1fr;
+    gap: 30px;
+    padding-right: 0;
+  }
+  .place {
+    width: 80%;
+    height: auto;
+    margin: 0 auto;
+    margin-bottom: 20px;
+  }
+  #pa {
+    font-size: large;
+  }
+  .place p {
+    font-size: small;
+  }
+
+  .container3 {
+    position: static;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    grid-template-columns: 1fr;
+  }
+  .box {
+    height: auto;
+    padding: 20px 0;
+    font-size: 15px;
+  }
+  .iconbox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 15px;
+  }
+  #mail {
+    width: 100%;
+    height: 80%;
+  }
+  .social-icon2 {
+    width: 20%;
+    height: 80%;
+    font-size: 18px;
+  }
+  .iconbox2 ::placeholder {
+    font-size: 12px;
+  }
+  .sub1,
+  .sub2,
+  .sub3,
+  .sub4,
+  .sub5 {
+    margin-bottom: 0;
+    padding: 0;
+  }
+  #sub5p2 {
+    margin-top: 0;
+  }
+  .sub1 p,
+  .sub2 li a,
+  .sub3 ul,
+  .sub4 ul {
+    line-height: 2;
+  }
+  .bottom {
+    position: static;
+    width: 100%;
+    height: auto;
+    padding-left: 0;
+    padding: 2px 20px 30px 20px;
+    text-align: center;
+    font-size: 12px;
+  }
+}

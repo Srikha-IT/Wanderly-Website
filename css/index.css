@@ -1,0 +1,481 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  position: relative;
+}
+.bgimg {
+  width: 100vw;
+  height: 110vh;
+  background-image: url(../images/home.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  transition: background-image 1s ease-in-out;
+}
+
+.navbar {
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 35px;
+  top: 0;
+  height: 10vh;
+  width: 100vw;
+}
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+.logo h1 {
+  margin: 0;
+  color: blue;
+}
+.navbar ul {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  gap: 75px;
+  list-style: none;
+  font-size: 18px;
+  font-weight: bold;
+  color: rgb(5, 5, 75);
+  overflow: hidden;
+}
+.navbar button {
+  background-color: blue;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  display: flex;
+  margin-top: 15px;
+  width: 7vw;
+  height: 6vh;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.logo .fa-plane {
+  color: blue;
+  font-size: 30px;
+  display: flex;
+  align-items: center;
+  transform: rotate(-45deg);
+}
+.navbar a:link,
+a:visited {
+  text-decoration: none;
+}
+.navbar a:hover,
+a:active {
+  text-decoration: unset;
+  color: blue;
+}
+.para {
+  position: absolute;
+  left: 4vw;
+  top: 20vh;
+}
+#p1 {
+  color: white;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 60px;
+  font-weight: bolder;
+  word-spacing: 10px;
+  letter-spacing: 1px;
+  line-height: 1.5;
+  margin: 0;
+  text-shadow: 2px 2px 8px black;
+}
+#p2 {
+  color: white;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 25px;
+  word-spacing: 10px;
+  line-height: 1.8;
+  margin: 0;
+  text-shadow: 2px 2px 10px black;
+  -webkit-text-stroke: 0.5px white;
+}
+.btns {
+  position: absolute;
+  left: 30px;
+  top: 450px;
+  width: 450px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+#btn1 {
+  background-color: blue;
+  border: none;
+  border-radius: 5px;
+  width: 180px;
+  height: 50px;
+  left: 200px;
+  font-size: large;
+  font-weight: bold;
+  cursor: pointer;
+}
+#btn2 {
+  background-color: white;
+  border: none;
+  border-radius: 5px;
+  width: 180px;
+  height: 50px;
+  font-size: large;
+  font-weight: bold;
+  cursor: pointer;
+}
+#btn1 a {
+  color: white;
+}
+#btn2 a {
+  color: black;
+}
+.btns a:link,
+a:visited {
+  text-decoration: none;
+}
+#btn1 a:hover,
+a:active {
+  color: yellow;
+}
+#btn2 a:hover,
+a:active {
+  color: blue;
+}
+.cards {
+  background-color: white;
+  border-radius: 10px;
+  position: absolute;
+  top: 580px;
+  left: 2vw;
+  right: 2vw;
+  width: 95vw;
+  height: 20vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  color: rgb(4, 4, 106);
+  font-size: larger;
+  font-weight: bold;
+  box-shadow: 5px 5px 2px rgba(172, 172, 172, 0.3);
+  z-index: 10; /* to overlap on grids*/
+}
+.title {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding-bottom: 12px;
+}
+.cards .c1 {
+  border-left: thin solid rgb(206, 206, 206);
+  padding-left: 20px;
+}
+.cards button {
+  background-color: rgb(4, 4, 106);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  width: 100px;
+  height: 50px;
+  font-size: large;
+  cursor: pointer;
+}
+.cards ::placeholder {
+  font-size: small;
+  text-align: center;
+  font-weight: bold;
+}
+input[type="text"] {
+  width: 200px;
+  height: 30px;
+  border-radius: 8px;
+  border: 1px solid gray;
+}
+input[type="number"] {
+  width: 100px;
+  height: 30px;
+  border-radius: 8px;
+  border: 1px solid gray;
+}
+input[type="date"] {
+  width: 1;
+  height: 2rem;
+  border-radius: 8px;
+  border: 1px solid gray;
+  padding: 0 5px;
+}
+.cards span {
+  font-size: medium;
+  font-weight: 500;
+}
+.text {
+  font-weight: 300;
+  font-family: sans-serif;
+  color: rgb(4, 4, 106);
+}
+.cards text {
+  margin-left: 100px;
+}
+.c1 .heading {
+  font-size: large;
+  font-weight: bold;
+}
+.container {
+  background-color: white;
+  position: absolute;
+  top: 110vh;
+  display: flex;
+}
+.gridhead {
+  top: 80vh;
+  background-color: white;
+  width: 100vw;
+  height: 26vh;
+  display: flex;
+  gap: 800px;
+}
+.gridhead h1 {
+  color: rgb(4, 4, 114);
+  margin-top: 80px;
+  margin-left: 30px;
+  margin-bottom: 40px;
+}
+.gridhead h3 {
+  color: blue;
+  margin-top: 90px;
+  cursor: pointer;
+}
+.gridhead a:link,
+a:visited {
+  text-decoration: none;
+}
+.gridhead a:hover h3 {
+  color: green;
+}
+.grid {
+  top: 25vh;
+  margin: 0;
+  background-color: white;
+  position: absolute;
+  width: 100vw;
+  height: 80vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 20px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+.box {
+  display: flex;
+  background-color: white;
+  height: 65vh;
+  width: 100%;
+  border-radius: 10px;
+  color: rgb(6, 6, 132);
+  flex-direction: column;
+  font-size: larger;
+  font-weight: bold;
+  line-height: 1.5;
+  box-shadow: 5px 5px 2px rgba(172, 172, 172, 0.3);
+}
+.box img {
+  width: 100%;
+  height: 75%;
+  margin-top: 0;
+  border-radius: 10px;
+}
+.info {
+  padding: 20px;
+}
+.box:hover {
+  transform: scale3d(1.1, 1.1, 0.5);
+  transition: all 0.5s ease-in;
+}
+
+/*media queries for mobile screen*/
+@media (max-width: 500px) {
+  body {
+    height: auto;
+  }
+  .bgimg {
+    height: auto;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .navbar {
+    height: auto;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .logo h1 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: xx-large;
+  }
+  .logo .fa-plane {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 25px;
+  }
+  .navbar ul {
+    flex-direction: row;
+    gap: 30px;
+    font-size: 15px;
+    padding-left: 0;
+  }
+  .navbar button {
+    width: 90px;
+    height: 30px;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .para {
+    position: static;
+    text-align: center;
+    margin-top: 20px;
+  }
+  #p1,
+  #p2 {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 10px;
+  }
+  #p1 {
+    font-size: x-large;
+  }
+  #p2 {
+    font-size: large;
+  }
+  .btns {
+    position: static;
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    align-items: center;
+    justify-content: center;
+    margin: 30px auto;
+    gap: 20px;
+  }
+  #btn1,
+  #btn2 {
+    width: 80%;
+    height: 40px;
+    font-size: small;
+  }
+  .cards {
+    position: static;
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    height: auto;
+    margin: 30px auto;
+    padding: 20px;
+    text-align: left;
+    font-size: larger;
+  }
+  .c1 {
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    font-size: large;
+  }
+  .loc {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .cards span {
+    font-size: small;
+  }
+  .cards button {
+    width: 30%;
+    height: 40px;
+    font-size: small;
+    margin-bottom: 10px;
+  }
+  .cards > div {
+    width: 100%;
+    padding: 20px;
+    margin: 15px 0;
+    border: thin solid rgb(206, 206, 206);
+  }
+  .date-row {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  .title {
+    padding-top: 10px;
+  }
+
+  .c1 span {
+    display: block;
+    margin-top: 0;
+    font-size: 14px;
+  }
+  .c1 .heading {
+    font-size: large;
+    font-weight: bold;
+  }
+
+  .container {
+    position: static;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .gridhead {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 20px 0;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+  }
+  .gridhead h1 {
+    margin: 0;
+    text-align: center;
+    font-size: x-large;
+  }
+  .gridhead h3 {
+    margin: 10px 0 0 0;
+  }
+  .grid {
+    position: static;
+    width: 90%;
+    height: auto;
+    margin: 20px auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+  .grid .box {
+    font-size: medium;
+  }
+}
